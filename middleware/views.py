@@ -4,3 +4,6 @@ from django.shortcuts import render, HttpResponse
 def home(request):
 	print("I am view ")
 	return render(request,'home.html')
+
+def index(request):
+	return HttpResponse("Data")
